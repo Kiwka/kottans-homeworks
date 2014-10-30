@@ -13,4 +13,4 @@ It should have:
 3. footer that has copyright. copy of links from the header, link to terms of service, etc.
 
 ##Solution
-(coming soon)
+Preview of the result http://kiwka.github.io/kottans-homeworks/Homework-2/
