@@ -35,12 +35,10 @@ nav a:hover {
 
 h2:before {
 	content: url('../img/decorative_line_left.png');
-	padding-top: 15px;
 }
 
 h2:after {
 	content: url('../img/decorative_line_right.png');
-	margin-top: 15px;
 }
 
 /* Reset + Styles not from the task */
