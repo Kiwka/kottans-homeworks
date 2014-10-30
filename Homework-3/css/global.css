@@ -1,0 +1,80 @@
+body {
+	background-color: #f7eac8;
+}
+
+h2 {
+	font: bold 32px/36px Helvetica, sans-serif;
+	text-align: center;
+}
+
+p:first-letter {
+	font-size: 48px;
+}
+
+a {
+	color: #28abe3;
+}
+
+a:hover {
+	color: black;
+}
+
+nav a {
+	color: #542733;
+}
+
+nav a:hover {
+	color: #e8b71a;
+}
+
+.footer {
+	background-color: #d96459;
+	font-size: 12px;
+}
+
+
+h2:before {
+	content: url('../img/decorative_line_left.png');
+	padding-top: 15px;
+}
+
+h2:after {
+	content: url('../img/decorative_line_right.png');
+	margin-top: 15px;
+}
+
+/* Reset + Styles not from the task */
+
+body {
+	margin: 0;
+}
+
+section {
+	padding: 10px;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+form {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+footer ul {
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+
