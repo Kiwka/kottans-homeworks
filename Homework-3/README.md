@@ -12,4 +12,4 @@
     - Используйте псевдо-элементы :before/:after – минимум один раз на странице, на ваше усмотрение.
 
 ## Solution
-Check the preview of the solution here: (coming soon)
+Check the preview of the solution here: http://kiwka.github.io/kottans-homeworks/Homework-3/
