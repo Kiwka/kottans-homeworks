@@ -41,18 +41,21 @@ h2:after {
 	content: url('../img/decorative_line_right.png');
 }
 
-/* Reset + Styles not from the task */
+/* Styles not from the task */
+nav {
+	padding: 20px;
+}
 
-body {
-	margin: 0;
+h2 {
+	margin-bottom: 20px;
 }
 
 section {
 	padding: 10px;
+	margin-bottom: 30px;
 }
 
 ul {
-	list-style-type: none;
 	text-align: center;
 }
 
