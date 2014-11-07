@@ -75,9 +75,14 @@ section {
 	}
 }
 
-.contact {
-	display: flex;
-
+.contacts {
+	&__map {
+		/* display: inline-block; */
+	}
+	&__info {
+		display: inline-block;
+		list-style-type: none;
+	}
 }
 
 .stay-in {
