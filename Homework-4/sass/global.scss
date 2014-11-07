@@ -73,6 +73,9 @@ section {
 		margin-top: 10px;
 		font-weight: 600;
 	}
+	&__answer {
+		margin-left: 20px;
+	}
 }
 
 .contacts {
@@ -86,8 +89,6 @@ section {
 }
 
 .stay-in {
-	display: flex;
-	justify-content: center;
 	&__form{
 		margin: 10px 0;
 		font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;

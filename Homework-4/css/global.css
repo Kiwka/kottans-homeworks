@@ -48,33 +48,32 @@ section {
 .faq__question {
   margin-top: 10px;
   font-weight: 600; }
+.faq__answer {
+  margin-left: 20px; }
 
 .contacts__info {
   display: inline-block;
   list-style-type: none; }
 
-.stay-in {
-  display: flex;
-  justify-content: center; }
-  .stay-in__form {
-    margin: 10px 0;
-    font: 16px "Didact Gothic", Arial, Helvetica, sans-serif; }
-    .stay-in__form__input {
-      height: 30px;
-      width: 300px;
-      border-radius: 5px 0px 0px 5px;
-      border: 1px solid black;
-      box-sizing: border-box;
-      padding-left: 10px; }
-    .stay-in__form__button {
-      height: 30px;
-      border: 1px solid #4c808b;
-      border-radius: 0px 5px 5px 0px;
-      background-color: #4c808b;
-      color: white; }
-      .stay-in__form__button:hover {
-        background-color: #130a01;
-        border: 1px solid #130a01; }
+.stay-in__form {
+  margin: 10px 0;
+  font: 16px "Didact Gothic", Arial, Helvetica, sans-serif; }
+  .stay-in__form__input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 10px; }
+  .stay-in__form__button {
+    height: 30px;
+    border: 1px solid #4c808b;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #4c808b;
+    color: white; }
+    .stay-in__form__button:hover {
+      background-color: #130a01;
+      border: 1px solid #130a01; }
 
 .footer {
   background: #130a01;
