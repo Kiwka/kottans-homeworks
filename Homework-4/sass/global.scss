@@ -1,0 +1,71 @@
+//Color scheme of the site
+$footer-color: #130a01;
+$emphasize-color: #4c808b;
+$bar-color: #839aa2;
+$second-color: #90bc4b;
+$back-color: #fefff9;
+
+//Media queries
+
+//General styles
+body {
+	background-color: $back-color;
+	font-family: Lora, serif;
+}
+
+h1 {
+	font: 28px/48px "Yeseva One", Arial, Helvetica, sans-serif;
+	display: block;
+	border-bottom: 1px solid $emphasize-color;
+}
+
+section {
+	padding: 0 30px;
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+
+//Styles for sections
+.menu {
+	background-color: $footer-color;
+	border-bottom: 1px solid $emphasize-color;
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: inset 0px 1px 10px 1px $emphasize-color;
+	&__item {
+		color: $emphasize-color;
+		font: 18px/40px "Didact Gothic", Arial, Helvetica, sans-serif;
+		text-decoration: none;
+		padding: 6px 20px;
+		&:hover{
+			color: $back-color;
+			background: $emphasize-color;
+			border-radius: 6px;
+		}
+	}
+}
+
+.article {
+	& p {
+		padding: 5px 0;
+	}
+	&__image_left{
+		float: left;
+	}
+	&__image_right{
+		float: right;
+	}
+	&__blockquote {
+		text-align: center;
+	}
+}
+
+footer {
+	background: $footer-color;
+	color: $back-color;
+}
+

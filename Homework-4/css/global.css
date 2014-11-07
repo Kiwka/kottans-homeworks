@@ -1,0 +1,45 @@
+body {
+  background-color: #fefff9;
+  font-family: Lora, serif; }
+
+h1 {
+  font: 28px/48px "Yeseva One", Arial, Helvetica, sans-serif;
+  display: block;
+  border-bottom: 1px solid #4c808b; }
+
+section {
+  padding: 0 30px; }
+  section:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+.menu {
+  background-color: #130a01;
+  border-bottom: 1px solid #4c808b;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: inset 0px 1px 10px 1px #4c808b; }
+  .menu__item {
+    color: #4c808b;
+    font: 18px/40px "Didact Gothic", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 6px 20px; }
+    .menu__item:hover {
+      color: #fefff9;
+      background: #4c808b;
+      border-radius: 6px; }
+
+.article p {
+  padding: 5px 0; }
+.article__image_left {
+  float: left; }
+.article__image_right {
+  float: right; }
+.article__blockquote {
+  text-align: center; }
+
+footer {
+  background: #130a01;
+  color: #fefff9; }

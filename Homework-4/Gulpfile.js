@@ -1,32 +1,36 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
+	/*imagemin = require('gulp-imagemin'),*/
+	concat = require('gulp-concat'),
+	minifyCss = require('gulp-minify-css'),
 	autoprefixer = require('gulp-autoprefixer'),
-	watch = require('gulp-watch'),
-	minifyCSS = require('gulp-minify-css');
+	sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-    gulp.src('./scss/*.scss')
+    gulp.src('./sass/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('autoprefixer', function(){
-	return gulp.src('./css/*.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'));
+gulp.task('cssMin', function() {
+  gulp.src('./css/*.css')
+    .pipe(autoprefixer())
+    .pipe(minifyCss())
+    .pipe(concat('all.min.css'))
+    .pipe(gulp.dest('./css/min/'));
 });
+
+/*gulp.task('compressImages', function() {
+  gulp.src('./images/*.*')
+    .pipe(imagemin({
+      progressive: true
+    }))
+    .pipe(gulp.dest('./dist/images'));
+});
+*/
 
 gulp.task('watch', function() {
 	gulp.watch('./sass/*.scss', ['sass']);
-	gulp.watch('./css/*.css', ['autoprefixer','minify-css']);
+	gulp.watch('./css/*.css', ['cssMin']);
 });
 
-gulp.task('minify-css', function() {
-	gulp.src('./css/global.css')
-		.pipe(gulp.dest('./css/'))
-});
-
-gulp.task('default', ['sass', 'autoprefixer', 'minify-css', 'watch']);
+gulp.task('default', ['sass','cssMin', 'watch']);
