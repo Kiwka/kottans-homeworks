@@ -5,10 +5,12 @@ body {
 h1 {
   font: 28px/48px "Yeseva One", Arial, Helvetica, sans-serif;
   display: block;
-  border-bottom: 1px solid #4c808b; }
+  border-bottom: 1px solid #4c808b;
+  margin-bottom: 10px; }
 
 section {
-  padding: 0 30px; }
+  padding: 0 30px;
+  margin-bottom: 20px; }
   section:after {
     content: "";
     clear: both;
@@ -38,8 +40,49 @@ section {
 .article__image_right {
   float: right; }
 .article__blockquote {
-  text-align: center; }
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgba(76, 128, 139, 0.2); }
 
-footer {
+.faq__question {
+  margin-top: 10px;
+  font-weight: 600; }
+
+.stay-in__call {
+  text-align: center; }
+.stay-in__form {
+  margin: 10px 0;
+  font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;
+  text-align: center; }
+  .stay-in__form__input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 10px; }
+  .stay-in__form__button {
+    height: 30px;
+    border: 1px solid #4c808b;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #4c808b;
+    color: white; }
+    .stay-in__form__button:hover {
+      background-color: #130a01; }
+
+.footer {
   background: #130a01;
-  color: #fefff9; }
+  color: #fefff9;
+  display: flex;
+  justify-content: space-between;
+  font: 16px "Didact Gothic", Arial, Helvetica, sans-serif; }
+  .footer__menu {
+    display: flex;
+    justify-content: space-around; }
+    .footer__menu__item {
+      text-decoration: none;
+      color: #839aa2;
+      padding: 0 10px; }
+      .footer__menu__item:hover {
+        color: white; }

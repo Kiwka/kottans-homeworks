@@ -1,8 +1,7 @@
 //Color scheme of the site
 $footer-color: #130a01;
-$emphasize-color: #4c808b;
+$emphasize-color: #4c808b; //rgb(76,128,139)
 $bar-color: #839aa2;
-$second-color: #90bc4b;
 $back-color: #fefff9;
 
 //Media queries
@@ -17,10 +16,12 @@ h1 {
 	font: 28px/48px "Yeseva One", Arial, Helvetica, sans-serif;
 	display: block;
 	border-bottom: 1px solid $emphasize-color;
+	margin-bottom: 10px;
 }
 
 section {
 	padding: 0 30px;
+	margin-bottom: 20px;
 	&:after {
 		content: "";
 		clear: both;
@@ -60,12 +61,70 @@ section {
 		float: right;
 	}
 	&__blockquote {
+		margin: 10px 0;
+		padding: 10px 0;
 		text-align: center;
+		background-color: rgba(76,128,139,.2);
 	}
 }
 
-footer {
+.faq {
+	&__question {
+		margin-top: 10px;
+		font-weight: 600;
+	}
+}
+
+.contact {
+	display: flex;
+
+}
+
+.stay-in {
+	display: flex;
+	justify-content: center;
+	&__form{
+		margin: 10px 0;
+		font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;
+		&__input{
+			height: 30px;
+			width: 300px;
+			border-radius: 5px 0px 0px 5px;
+			border: 1px solid black;
+			box-sizing: border-box;
+			padding-left: 10px;
+		}
+		&__button {
+			height: 30px;
+			border: 1px solid $emphasize-color;
+			border-radius: 0px 5px 5px 0px;
+			background-color: $emphasize-color;
+			color: white;
+			&:hover {
+				background-color: $footer-color;
+				border: 1px solid $footer-color;
+			}
+		}
+	}
+}
+
+.footer {
 	background: $footer-color;
 	color: $back-color;
+	display: flex;
+	justify-content: space-between;
+	font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;
+	&__menu {
+		display: flex;
+		justify-content: space-around;
+		&__item {
+			text-decoration: none;
+			color: $bar-color;
+			padding: 0 10px;
+			&:hover {
+				color: white;
+			}
+		}
+	}
 }
 
