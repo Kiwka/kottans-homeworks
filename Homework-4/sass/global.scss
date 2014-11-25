@@ -80,7 +80,7 @@ section {
 
 .contacts {
 	&__map {
-		/* display: inline-block; */
+		display: inline-block;
 	}
 	&__info {
 		display: inline-block;
@@ -89,8 +89,12 @@ section {
 }
 
 .stay-in {
+	&__call{
+		text-align: center;
+	}
 	&__form{
-		margin: 10px 0;
+		display: block;
+		margin: 10px auto;
 		font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;
 		&__input{
 			height: 30px;
@@ -117,7 +121,9 @@ section {
 .footer {
 	background: $footer-color;
 	color: $back-color;
+	height: 100px;
 	display: flex;
+	padding: 20px 10px;
 	justify-content: space-between;
 	font: 16px "Didact Gothic", Arial, Helvetica, sans-serif;
 	&__menu {

@@ -62,12 +62,23 @@ function reduce(arr, fn, initial) {
 
 function duckCount() {
 	'use strict';
-	arguments.map(function(curr){
-		if (curr.hasOwnProperty('duck')) {
-			arguments.splice(arguments.indexOf(curr),1);
-		}
-	});
-	return arguments.length;
+	return Array.prototype.slice.call(arguments).filter(function(obj){
+		return Object.prototype.hasOwnProperty.call(obj, 'quack');
+	}).length;
+}
+
+var slice = Array.prototype.slice
+
+function logger(namespace) {
+	'use strict';
+	return function(){
+		console.log.apply(console, [namespace].concat(slice.call(arguments)))
+	}
+}
+
+
+function getDependencies () {
+
 }
 
 module.exports = upperCaser;
@@ -78,3 +89,5 @@ module.exports = checkUsersValid;
 module.exports = countWords;
 module.exports = reduce;
 module.exports = duckCount;
+module.exports = logger;
+module.exports = getDependencies;
