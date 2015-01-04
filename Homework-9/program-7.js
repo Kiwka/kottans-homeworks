@@ -1,0 +1,1 @@
+module.exports = (strng, number = strng.length) => (strng+'!'.repeat(number));
